@@ -218,7 +218,7 @@
   setInterval(function() {element.innerHTML += "1"}, 1000);
   </script>
   ```
-  
+
 --- 
 
 ## 7. Cookie 
@@ -233,7 +233,7 @@
 **Creation:** - 
 
    ```js
-    document.cookie = "username = Kanish; path=/";
+    document.cookie = "username = Kanish; path=/admin";
   ```
 
 **Deletion**
