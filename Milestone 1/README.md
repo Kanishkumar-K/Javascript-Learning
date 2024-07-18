@@ -3,7 +3,6 @@
 ## History of JS 
 
 
-xx
 ## ECMAScript
 
 
