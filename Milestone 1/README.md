@@ -102,7 +102,63 @@
 
 --- 
 
-## 4. Window Navigator
+## 4. Window Navigator 
+  -  Window  navigator contains information of visitors browser.
 
+**cookieEnabled()**
+  - Check whether cookie enabled or not.
 
-    
+**appName()**
+  - Returns the application name.
+
+**product()**
+  - Returns the product name of the browser engine.
+
+**platforrm()**
+  - It returns the operating system name.
+
+**langauge()**
+  - It returns the language of the browser.
+
+**javaEnabled()**
+  - Check whether java enabled or not.
+
+---
+
+## 5. Popup Alert
+  - It is used to display alert message to the user.
+
+**alert()**
+  - Show popup to display something. Click OK to proceed.
+
+**confirm()**
+  - Show popup to get user confirmation. Click OK or cancel to proceed.
+
+**prompt()**
+  - Show popup to get user input. Click OK to proceed.
+
+---
+
+## 6. Timing Events
+  - Timing events are used to execute a function after a specified time interval.
+
+**setTimeout()**
+
+  setTimeout(function, milliseconds)
+  - Executes a function, after waiting a specified number of milliseconds.
+
+  - clearTimeout() is used to clear the execution
+
+**setInterval()**
+
+  setInterval(function, milliseconds)
+  - Same as setTimeout(), but repeats the execution of the function continuously.
+
+  - clearInterval() is used to clear the execution
+
+--- 
+
+## 6. Cookie 
+
+ - Cookies are used to store data on the client side.
+
