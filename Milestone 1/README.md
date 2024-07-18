@@ -140,16 +140,45 @@
 **alert()**
   - Show popup to display something. Click OK to proceed.
 
+  ```
+    <script type="text/javascript">  
+    function msg(){  
+     alert("Hello Alert Box");  
+    }  
+    </script>  
+    <input type="button" value="click" onclick="msg()"/>  
+  ```
+
 **confirm()**
   - Show popup to get user confirmation. Click OK or cancel to proceed.
+
+  ```
+  <script type="text/javascript">  
+    function msg(){  
+     confirm("Do you want to continue?");  
+    }  
+    </script>  
+    <input type="button" value="click" onclick="msg()"/>  
+  ```
 
 **prompt()**
   - Show popup to get user input. Click OK to proceed.
 
+- It returns the value entered by the user.
+
+  ```
+  <script type="text/javascript">  
+    function msg(){  
+     prompt("Enter your name:");  
+    }  
+    </script>  
+    <input type="button" value="click" onclick="msg()"/>  
+  ```
 ---
 
 ## 6. Timing Events
   - Timing events are used to execute a function after a specified time interval.
+
 
 **setTimeout()**
 
@@ -158,6 +187,20 @@
 
   - clearTimeout() is used to clear the execution
 
+
+  ```
+  <script>  
+  function msg()
+  {  
+      setTimeout(  
+        function(){  
+          alert("Welcome after 2 seconds")},2000);  
+    }  
+  </script>      
+  <input type="button" value="click" onclick="msg()"/>  
+  ```
+
+
 **setInterval()**
 
   setInterval(function, milliseconds)
@@ -165,6 +208,17 @@
 
   - clearInterval() is used to clear the execution
 
+
+  ```
+  <p id="demo"></p>
+
+  <script>
+  const element = document.getElementById("demo");
+
+  setInterval(function() {element.innerHTML += "1"}, 1000);
+  </script>
+  ```
+  
 --- 
 
 ## 7. Cookie 
