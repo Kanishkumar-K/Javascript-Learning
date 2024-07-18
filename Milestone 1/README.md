@@ -63,7 +63,7 @@
         - Closes the current window
 
       
-![alt text](image.png)
+![Screenshot 2024-07-17 160224](https://github.com/user-attachments/assets/980a1e50-1e8b-4c90-b368-bad062c2afa2)
 
 ---
 
