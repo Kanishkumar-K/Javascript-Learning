@@ -162,3 +162,22 @@
 
  - Cookies are used to store data on the client side.
 
+
+**Cookie properties:**
+
+  - Cookies are saved in name-value pairs.
+
+**Creation:** - 
+
+   ```js
+    document.cookie = "username = Kanish";
+  ```
+
+**Deletion**
+
+  ```js
+    document.cookie = "username=;  path=/";
+  ```
+
+---
+
