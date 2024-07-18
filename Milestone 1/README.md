@@ -34,6 +34,7 @@
 - ECMAScript is  a core language specification
 - Javascript has features beyond ECMAScript.
 
+---
 
 ## Browser Object Model
 
