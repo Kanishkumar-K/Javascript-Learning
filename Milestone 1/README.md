@@ -55,37 +55,16 @@
 
 ![Screenshot 2024-07-17 154136](https://github.com/user-attachments/assets/13a1a8a6-ce84-4ec0-80d9-5b0dc2ff7d92)
 
+
 - 3. Open()
         - Opens a new window
 
 - 4. Close()
         - Closes the current window
 
-              <!DOCTYPE html>
-              <html>
-              <body>
-  
-              <p id="demo"></p>
-  
-              <script>
-              var myWindow;
+      
+![alt text](image.png)
 
-              function openWindow(){
-                  myWindow = window.open("https://amazon.in");
-              }
-  
-              function closeWindow() {
-                  if (myWindow) {
-                      myWindow.close();
-                  }
-              }
-              </script>
-  
-              <button onclick="openWindow();">Open</button>
-              <button onclick="closeWindow();">Close</button>
-              </body>
-              </html>
-            
 
 - 5. Moveto() 
         - Move the current window

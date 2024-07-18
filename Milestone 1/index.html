@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var myWindow;
+
+function openWindow(){
+    myWindow = window.open("https://amazon.in");
+}
+
+function closeWindow() {
+    if (myWindow) {
+        myWindow.close();
+    }
+}
+</script>
+
+<button onclick="openWindow();">Open</button>
+<button onclick="closeWindow();">Close</button>
+</body>
+</html>
