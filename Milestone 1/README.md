@@ -34,6 +34,7 @@
 - ECMAScript is  a core language specification
 - Javascript has features beyond ECMAScript.
 
+---
 
 ## Browser Object Model
 
@@ -48,6 +49,9 @@
 
 - 2. Window Height
         It determines the inner height of the browser window 
+
+
+
 
 - 3. Open()
         - Opens a new window
