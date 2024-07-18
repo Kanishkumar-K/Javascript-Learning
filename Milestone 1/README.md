@@ -65,13 +65,6 @@
       
 ![alt text](image.png)
 
-
-- 5. Moveto() 
-        - Move the current window
-
-- 6. Resize()
-        - Resize the window screen
-
 ---
 
 ## 2. Window Location
@@ -79,16 +72,44 @@
   
 **window.location.href**
  - Returns the href (URL) of the current page
+
+ ```
+  <p id = "value"> </p>  
+  <script>  
+  document.getElementById("value").innerHTML = window.location.href;  
+  </script>  
+ ```
    
 **window.location.hostname** 
  - Returns the domain name of the web host
    
+```
+<p id = "value"> </p>  
+<script>  
+document.getElementById("value").innerHTML = window.location.hostname;  
+</script>  
+```
+
 **window.location.pathname**
  - Returns the pathname of the current page
-   
+
+```
+<p id = "value"> </p>  
+<script>  
+document.getElementById("value").innerHTML = window.location.pathname;  
+</script>  
+
+```
+
 **window.location.protocol**
  - Returns the web protocol used ( Example: http, https )
 
+```
+<p id = "value"> </p>  
+<script>  
+document.getElementById("value").innerHTML = window.location.protocol;  
+</script>  
+```
 ---
 
 ## 3. Window Screen
@@ -108,6 +129,25 @@
     
 **screen.pixelDepth**
   -  It returns the pixel depth of the screen.
+
+
+```
+  <p id = "value1"> </p>  
+  <p id = "value2"> </p>  
+  <p id = "value3"> </p>  
+  <p id = "value4"> </p>  
+  <p id = "value5"> </p>  
+  <p id = "value6"> </p>  
+  <script>  
+  document.getElementById("value1").innerHTML = window.screen;  
+  document.getElementById("value2").innerHTML = window.screen.width;  
+  document.getElementById("value3").innerHTML = window.screen.height;  
+  document.getElementById("value4").innerHTML = window.screen.availWidth;  
+  document.getElementById("value5").innerHTML = window.screen.availHeight;  
+  document.getElementById("value6").innerHTML = window.screen.pixelDepth;  
+  </script>  
+
+```
 
 --- 
 
@@ -131,6 +171,26 @@
 
 **javaEnabled()**
   - Check whether java enabled or not.
+
+
+```
+  <p id = "value1"> </p>  
+  <p id = "value2"> </p>  
+  <p id = "value3"> </p>  
+  <p id = "value4"> </p>  
+  <p id = "value5"> </p>  
+  <p id = "value6"> </p>  
+
+  <script>  
+  document.getElementById("value1").innerHTML = navigator.cookieEnabled;  
+  document.getElementById("value2").innerHTML = navigator.javaEnabled;  
+  document.getElementById("value3").innerHTML = navigator.appName;  
+  document.getElementById("value4").innerHTML = navigator.product;  
+  document.getElementById("value5").innerHTML = navigator.platform;  
+  document.getElementById("value6").innerHTML = navigator.language; 
+  </script>  
+```
+
 
 ---
 
@@ -229,6 +289,14 @@
 **Cookie properties:**
 
   - Cookies are saved in name-value pairs.
+
+  A cookie consists of the following components:
+  - Name
+  - Value
+  - Zero or more attributes (name/value pairs). 
+   
+   Attributes store information such as the cookie's expiration, domain, and flags (such as Secure and HttpOnly).
+
 
 **Creation:** - 
 
