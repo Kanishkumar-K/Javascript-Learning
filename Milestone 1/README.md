@@ -3,13 +3,39 @@
 ## History of JS 
 
 
+- JavaScript is a lightweight, interpreted programming language. 
+- It is commonly used to create dynamic elements in web applications
+- JavaScript was submitted to the ECMA for standardization.
+- This led to the creation of the ECMAScript specification.
+
+
+**Initial Release and naming:**
+  ```
+  Mocha -> LiveScript -> JavaScript
+  ```
+---
+
 ## ECMAScript
 
+```
+  ES1 -It supports primitive data types, arrays, objects, looping.
+
+  ES2 - No new features. Only editoral changes.
+
+  ES3 - Regex, Exception handling and switching.
+
+  ES5 - Strict Mode, JSON, Map/ Filter, forEach array.
+
+  ES6 - Introduction of Classes, Spread operator, Arrow functions. let and const keyword, async functions.
+```
+---
+
+
+- ECMAScript is  a core language specification
+- Javascript has features beyond ECMAScript.
 
 
 ## Browser Object Model
-
-
 
 ## 1. Window Object
 
@@ -22,8 +48,6 @@
 
 - 2. Window Height
         It determines the inner height of the browser window 
-
-        ![Screenshot 2024-07-17 154136](https://github.com/user-attachments/assets/1a627d6d-f424-48ac-a4ba-8cabf6a8c1df)
 
 - 3. Open()
         - Opens a new window
@@ -158,7 +182,7 @@
 
 --- 
 
-## 6. Cookie 
+## 7. Cookie 
 
  - Cookies are used to store data on the client side.
 
@@ -170,7 +194,7 @@
 **Creation:** - 
 
    ```js
-    document.cookie = "username = Kanish";
+    document.cookie = "username = Kanish; path=/";
   ```
 
 **Deletion**
