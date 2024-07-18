@@ -48,7 +48,9 @@
         It determines the inner width of the browser window 
 
 - 2. Window Height
-        It determines the inner height of the browser window 
+        It determines the inner height of the browser window
+     
+
 
 
 ![Screenshot 2024-07-17 154136](https://github.com/user-attachments/assets/13a1a8a6-ce84-4ec0-80d9-5b0dc2ff7d92)
