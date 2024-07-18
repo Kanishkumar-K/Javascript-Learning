@@ -173,4 +173,129 @@ let y = 3
 
 ---
 
-## 
+## typeof operator
+
+- The typeof operator returns the type of a variable or an expression.
+
+    ```
+    typeof "Kanish"         // Returns string
+    typeof 3.14           // Returns number
+    typeof true           // Returns boolean
+    typeof 1234n          // Returns bigint
+    typeof x              // Returns undefined
+    ```
+
+## undefined
+
+- Undefined is a type of Data type in JavaScript. 
+
+- When a variable is declared and not initialized or not assigned with any value. 
+
+- By default, the variable was stored with an Undefined value. 
+
+```
+let x
+console.log(x)
+```
+## null
+
+- In JavaScript, null is a special value that represents an empty or unknown value.
+
+```
+let number = null;
+```
+
+- In javascript, null and undefined are treated as false values.
+
+<br />
+<br />
+
+**Comparison:**
+
+```
+undefined == null    // true
+undefined === null   // false
+```
+
+---
+
+## Boolean 
+
+In javascript, boolean can have either two values
+- True
+- False
+
+1. Boolean of undefined is false.
+2. Boolean of empty string is false.
+3. Boolean of null is false.
+4. Boolean of NaN is false.
+5. Comparing two JavaScript objects always return false.
+
+---
+
+## Number
+
+Number() converts value to a Number.
+
+- JavaScript numbers are always stored in double-precision 64-bit binary format IEEE 754. 
+- This format stores numbers in 64 bits:
+
+        0-51 bits store the value
+        52-62 bits store the exponent
+        63rd bit is the sign bit
+    
+- When you add a string and a number in JavaScript, the result will be a string concatenation.
+
+- Constant with 0x are hexadecimal numbers
+
+        ```
+        let num1 = 5                  // 5
+        let num2 = 9.2                // 9.2
+
+        let num3 = 3 - "kanish"  
+        console.log(num3)             // undefined
+
+        let num4 = 2 /0 
+        console.log(num4)             // infinity
+
+        let num5 = -2 /0
+        console.log(num5)             // -infinity
+
+        let num6 = 5e4
+        console.log(num6)             // 50000
+
+        ```
+
+**JavaScript Strings**
+
+-   Strings are used to store text.
+-   Strings are surrounded with either single quotes or double quotes.
+-   It can be zero or more characters.
+
+
+**Template Strings**
+- Templates are strings enclosed in backticks.
+- Template String provide a way to interpolate variables and expressions into strings.
+- Template Strings are also called Template Literals.
+- Templates allow multi lines.
+
+```
+`This is a template string`
+```
+
+Created using 2 ways
+1. String literal
+2. Object (new keyword)
+
+
+```
+let name = 'kanish';  // String literal
+
+var stringname=new String("kanish");   // String Object
+
+```
+
+
+
+
+
