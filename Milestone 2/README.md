@@ -14,4 +14,33 @@
 Example: lastName 
 ```
 
+## Identifiers:
 
+- Identifiers are name given to a variable, function or a class.
+
+Rules:
+- Identifier names must start with either a letter, an underscore _, or the dollar sign $.
+- It may contain numbers (0-9)
+- Identifier names cannot start with numbers. 
+
+```
+Valid : firstName
+Invalid : 1name
+```
+
+## Comments
+
+ 1. Single line comments start with //.
+
+ 2. Multi line comments /* ... */
+
+ Example:
+ 
+ ```
+// This is an inline comment
+
+
+/ *
+Commented code
+*/
+ ```
