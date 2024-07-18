@@ -48,7 +48,9 @@
         It determines the inner width of the browser window 
 
 - 2. Window Height
-        It determines the inner height of the browser window 
+        It determines the inner height of the browser window
+     
+
 
 - 3. Open()
         - Opens a new window
