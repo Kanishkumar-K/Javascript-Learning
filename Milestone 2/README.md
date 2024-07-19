@@ -145,35 +145,63 @@ JavaScript ignores multiple white spaces.
 - Variables are Containers for Storing Data
 - Declared using var, let, const.
 
+
+Redeclared : 
+
+```
+var x =  10;
+var x = 20;  // redeclared
+```
+
+Reassigned:
+
+```
+var x = 10;
+x = 20; // reassigned
+```
+
+### Ways to declare a variables
 ```
 var :
     - Fuctional or global scope
     - Redeclared and reassigned
     - Initialization not required
+    
+            var x = 10;
+            {  
+            var x = 6;
+            }
+            document.getElementById("demo").innerHTML = x;     // 6
+    
 
 let :
     - Block scope
     - Redeclared not allowed
     - Can be reassigned
     - Initialization not required
+            
+            let x = 10;
+            {  
+            let x = 6;  // cannot redeclared
+            }
+            document.getElementById("demo").innerHTML = x;     // 10
+            
 
 const:
     -Block scope
     - Redeclared not allowed
     - Cannot be reassigned
     - Initialization required
-```
 
-Example:
-
-```
-const z = 5
-let y = 3
-```
-
+            const x = 10;
+            {  
+            x = 3;
+            }
+            document.getElementById("demo").innerHTML = x;     // None
+ ```               
 ---
 
-## typeof operator
+## Typeof operator
 
 - The typeof operator returns the type of a variable or an expression.
 
@@ -185,24 +213,23 @@ let y = 3
     typeof x              // Returns undefined
     ```
 
-## undefined
+## Undefined
 
-- Undefined is a type of Data type in JavaScript. 
+- When a variable is declared and not initialized or not assigned with any value.
 
-- When a variable is declared and not initialized or not assigned with any value. 
-
-- By default, the variable was stored with an Undefined value. 
 
 ```
-let x
-console.log(x)
+        let x
+        console.log(x)
 ```
-## null
 
-- In JavaScript, null is a special value that represents an empty or unknown value.
+## Null
+
+In JavaScript, null is a special value that is set intentionally that represents an empty value.
+
 
 ```
-let number = null;
+    let number = null;
 ```
 
 - In javascript, null and undefined are treated as false values.
@@ -266,7 +293,9 @@ Number() converts value to a Number.
 
         ```
 
-**JavaScript Strings**
+--- 
+
+## JavaScript Strings
 
 -   Strings are used to store text.
 -   Strings are surrounded with either single quotes or double quotes.
@@ -295,6 +324,9 @@ var stringname=new String("kanish");   // String Object
 
 ```
 
+---
+
+## Strings Methods
 
 
 
