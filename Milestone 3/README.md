@@ -1,6 +1,6 @@
 ## Operators:
 
-1. Unary Operator:
+## 1. Unary Operator:
 
 - Unary operator is an operator that takes only one operand. It can be prefix or postfix.
 
@@ -52,11 +52,17 @@
             document.getElementById("demo").innerHTML = x--;   // 2
 
 
-2. Bitwise Operator:
+## 2. Bitwise Operator:
 
 `& Operator (AND)`:
 
     - Only if both bits are 1, set resultant as 1.
+
+    let a = 5; // 0101
+    let b = 3; // 0011
+    let result = a & b; // 0001 (1)
+    console.log(result); // Output: 1
+
 
 `| operator (OR)`:
     
@@ -70,7 +76,7 @@
 
     - If both bits are same, resultant is 0.
 
-`<< operator`:
+`<< Left shift operator`:
 
     - Shifts the operands left by n bits.
 
@@ -80,7 +86,7 @@
             -------------
             12 = 0000 1100
 
-`>> operator`:
+`>> Right shift operator`:
 
     - Shifts the operands right by n bits.
 
@@ -90,8 +96,19 @@
             -------------
             1 = 0000 0001
 
+`>>> Unsigned right shift operator`:
 
-3. Boolean Operators:
+Zero-fill right shift - The bits are shifted to the right and those excess bits are discarded, while 0 bit is added from the left.
+
+
+    const a = 5; //  00000101
+    const b = 2; //  00000010
+
+    console.log(a >>> b); //  00000001   // 1
+
+
+
+## 3. Boolean Operators:
 
 `AND (&&)`:
 
@@ -124,7 +141,7 @@ Returns the opposite of the condition.
         alert("Name is not empty");
     }
 
-4. Arithmetic operators:
+## 4. Arithmetic operators:
 
 `Addition`:
 
@@ -154,7 +171,7 @@ The subtraction operator subtracts the two operands, producing their difference.
 
         5 - 3                 //  2
         3 - 5                 // -2
-        "foo" - 3             // NaN
+        "kanish" - 3             // NaN
 
 
 `Multiplication`:
@@ -178,3 +195,127 @@ Divides two operands.
         2.0 / 0                // returns Infinity
         2.0 / -0.0             // returns -Infinity
   
+## 5. Relational Operators:
+
+A relational operator compares its operands and returns a Boolean value based on comparison.
+
+`in operator`:
+
+The in operator returns true if the specified property is in the specified object.
+
+        propNameOrNumber in objectName
+
+
+    Example:
+
+        const letter = ["A", "B", "C"];
+        0 in letter; // returns true
+        6 in letter; // returns false
+
+`instanceOf operator`:
+
+The instanceof operator returns true if the specified object is of the specified object type. The syntax is:
+
+        objectName instanceof objectType
+
+    Example:
+
+        <p id="demo"></p>
+ 
+        const letter = ["A", "B", "C"];
+
+        document.getElementById("demo").innerHTML =
+            (letter instanceof Array)                      // True 
+
+---
+
+## 6. Equality Operator:
+
+The equality (==) operator checks whether its two operands are equal, returning a Boolean result.
+
+            console.log(1 == 1);
+            //true
+
+            console.log('hello' == 'hello');
+            //true
+
+            console.log('1' == 1);
+            //true
+
+            console.log(0 == false);
+            //true
+
+ `Strict Equality ====`:
+    
+    The strict equality operator always considers values and the types.
+
+            console.log(1 === 1);
+            //true
+
+            console.log('hello' === 'hello');
+            //true
+
+            console.log('1' === 1);
+            //false
+
+            console.log(0 === false);
+            //false
+
+
+## 7. `Conditional Operator`:
+
+A ternary operator evaluates a condition and executes a block of code based on the condition.
+    
+            condition ? expression1 : expression2.
+
+        Example:
+
+        function Voting(age) {
+            return age >= 18 ? 'yes' : 'no';
+        }
+
+
+## 8. `Assignment Operator`:
+
+The assignment (=) operator is used to assign a value to a variable or property.
+
+
+        | **Operation**              | **Syntax** |
+        |----------------------------|------------|
+        | Addition Assignment        | `a += b`   |
+        | Subtraction Assignment     | `a -= b`   |
+        | Multiplication Assignment  | `a *= b`   |
+        | Division Assignment        | `a /= b`   |
+        | Remainder Assignment       | `a %= b`   |
+        | Exponentiation Assignment  | `a **= b`  |
+
+
+Example:
+
+            let x = 2;
+            const y = 3;
+
+            console.log(x);
+            //  2
+
+            console.log((x = y + 1)); 
+            //  4
+
+## 9.`Comma operator`:
+
+The comma (,) operator evaluates each of its operands (from left to right) and returns the value of the last operand.
+
+    expr1, expr2 ...
+
+Example: 
+            
+        const a = 1, b = 2;
+
+
+`Spread Operator`:
+
+Spread (...) : Allows an iterable to expand in places where 0+ arguments are expected
+
+        const values = [3,6,9];
+
+        console.log(...values); // 3,6,9
