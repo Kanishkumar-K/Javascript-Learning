@@ -599,7 +599,7 @@ Properties:
 
 JSON object
 
-         myObj = {"name":"Kanish", "age":21 }
+         myObj =  {"name":"Kanish", "age":21 }
  
          myObj = `{"name":"Kanish", "age":21 }`  // json string
  
