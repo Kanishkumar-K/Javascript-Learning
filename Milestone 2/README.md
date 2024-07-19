@@ -599,11 +599,11 @@ Properties:
 
 JSON object
 
-        myObj = {"name":"Kanish", "age":21 }
-
-        myObj = `{"name":"Kanish", "age":21 }`  // json string
-
-        myObj = JSON.parse(myJSON);  // to convert as js object
+         myObj = {"name":"Kanish", "age":21 }
+ 
+         myObj = `{"name":"Kanish", "age":21 }`  // json string
+ 
+         myObj = JSON.parse(myJSON);  // to convert as js object
 
 
 
