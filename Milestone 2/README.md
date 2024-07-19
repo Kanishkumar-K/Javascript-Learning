@@ -561,3 +561,50 @@ Properties:
 1. Add a new property:
 
         Object.defineProperty(person, "age", {value:"21"})
+
+2. getOwnPropertyNames()
+    
+    Returns all the property names
+
+            Object.getOwnPropertyNames(person);
+
+3. Functions inside object 
+
+        var person = {
+            firstName: "Kanish",
+            lastName: "Kumar",
+            age: 30,
+            fullName: function(){
+                return this.firstName + " " + this.lastName		
+            }
+        }
+
+        person["fullName"]() ; // Kanish Kumar
+
+3. Delete an object property
+
+        delete person.age  // returns true
+
+---
+
+## JSON
+
+- Java Script Object Notation
+
+- JSON can be easily converted to JS objects
+
+        converting JSON strings into JavaScript objects:  JSON.parse()
+
+        converting an object into a JSON string:  JSON.stringify() 
+
+JSON object
+
+        myObj = {"name":"Kanish", "age":21 }
+
+        myObj = `{"name":"Kanish", "age":21 }`  // json string
+
+        myObj = JSON.parse(myJSON);  // to convert as js object
+
+
+
+    
