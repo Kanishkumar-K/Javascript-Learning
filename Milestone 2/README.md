@@ -334,7 +334,9 @@ Number() converts value to a Number.
 
 --- 
 <br >
-Number Precision
+Number Precision 
+<br />
+
 
      Integer Precision:
 
@@ -352,6 +354,38 @@ Number Precision
 
         let x  = "100" / "10";           // 10
 
+
+**Number Properties**:
+
+    - toString()	
+        Returns a number as a string
+
+    - toExponential()	
+        Returns a number written in exponential notation
+
+    - toFixed()	
+        Returns a number written with a number of decimals
+
+    - toPrecision()	
+        Returns a number written with a specified length
+
+    - valueOf()	
+        Returns a number as a number
+
+Example,
+        let x = 123.09;
+
+        document.getElementById("demo").innerHTML = x.toString();  // 123.09
+
+        document.getElementById("demo1").innerHTML = x.toExponential(); // 1.2309 e+2
+
+        // fixed upto certain float value
+        document.getElementById("demo2").innerHTML = x.toFixed(4);  // 123. 0900
+
+        // precise to given digits
+        document.getElementById("demo3").innerHTML = x.toPrecision(4); // 123.1
+
+--- 
 
 ## JavaScript Strings
 
@@ -395,39 +429,43 @@ Method to inject a variable or expression intto a string.
 
 ## String Methods
 
-    var text = "Kanishkumar";
+        var text = "Kanishkumar";
 
-    document.getElementById("demo").innerHTML = text.length;   // 11
+        document.getElementById("demo").innerHTML = text.length;   // 11
 
-    document.getElementById("demo1").innerHTML = text.charAt(0);    // K
+        document.getElementById("demo1").innerHTML = text.charAt(0);    // K
 
-    document.getElementById("demo2").innerHTML = text.charCodeAt(1);  // 97
+        document.getElementById("demo2").innerHTML = text.charCodeAt(1);  // 97
 
-    document.getElementById("demo3").innerHTML = text[0];   // K
+        document.getElementById("demo3").innerHTML = text[0];   // K
 
-    document.getElementById("demo4").innerHTML = text.at(1);  // a
+        document.getElementById("demo4").innerHTML = text.at(1);  // a
 
-    document.getElementById("demo5").innerHTML = text.slice(0,6);   // Kanish
+        document.getElementById("demo5").innerHTML = text.slice(0,6);   // Kanish
 
-    document.getElementById("demo6").innerHTML = text.slice(-4, -1);  // uma
+        document.getElementById("demo6").innerHTML = text.slice(-4, -1);  // uma
 
-    document.getElementById("demo7").innerHTML = text.substr(5,3); // (start, start+3)
+        document.getElementById("demo7").innerHTML = text.substr(5,3); // (start, start+3)
 
-    document.getElementById("demo8").innerHTML = text.toUpperCase();  // toLowerCase()
+        document.getElementById("demo8").innerHTML = text.toUpperCase();  // toLowerCase()
 
-    document.getElementById("demo9").innerHTML = text.concat(" ", "K");
+        document.getElementById("demo9").innerHTML = text.concat(" ", "K");
 
-    document.getElementById("demo10").innerHTML = text.trim(); // trimStart(), trimEnd()
+        document.getElementById("demo10").innerHTML = text.trim(); // trimStart(), trimEnd()
 
-    document.getElementById("demo11").innerHTML = text.padStart(15, "-"); // pads upto given length  ----Kanishkumar
+        document.getElementById("demo11").innerHTML = text.padStart(15, "-"); // pads upto given length  ----Kanishkumar
 
-    document.getElementById("demo12").innerHTML = text.repeat(2); 
+        document.getElementById("demo12").innerHTML = text.repeat(2); 
 
-    document.getElementById("demo13").innerHTML = text.replace("a", "-"); // replaceAll for all replacements
+        document.getElementById("demo13").innerHTML = text.replace("a", "-"); // replaceAll for all replacements
 
-    document.getElementById("demo14").innerHTML = text.split(""); // array of chars
+        document.getElementById("demo14").innerHTML = text.split(""); // array of chars
 
-    document.getElementById("demo15").innerHTML = text.indexOf("a"); // indexOf(), lastIndexOf()
-    
-    document.getElementById("demo16").innerHTML = text.search("n");  
+        document.getElementById("demo15").innerHTML = text.indexOf("a"); // indexOf(), lastIndexOf()
+        
+        document.getElementById("demo16").innerHTML = text.search("n");  
+
+
+## Arrays
+
 
