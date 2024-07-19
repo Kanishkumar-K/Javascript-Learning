@@ -51,6 +51,8 @@
             var x = 2;
             document.getElementById("demo").innerHTML = x--;   // 2
 
+---
+
 
 ## 2. Bitwise Operator:
 
@@ -106,7 +108,7 @@ Zero-fill right shift - The bits are shifted to the right and those excess bits 
 
     console.log(a >>> b); //  00000001   // 1
 
-
+---
 
 ## 3. Boolean Operators:
 
@@ -140,6 +142,8 @@ Returns the opposite of the condition.
     if(name!=""){
         alert("Name is not empty");
     }
+
+---
 
 ## 4. Arithmetic operators:
 
@@ -194,7 +198,8 @@ Divides two operands.
         1.0 / 2.0              // returns 0.5
         2.0 / 0                // returns Infinity
         2.0 / -0.0             // returns -Infinity
-  
+
+---
 
 ## 5. Relational Operators:
 
@@ -262,6 +267,7 @@ The equality (==) operator checks whether its two operands are equal, returning 
             console.log(0 === false);
             //false
 
+---
 
 ## 7. `Conditional Operator`:
 
@@ -275,6 +281,7 @@ A ternary operator evaluates a condition and executes a block of code based on t
             return age >= 18 ? 'yes' : 'no';
         }
 
+---
 
 ## 8. `Assignment Operator`:
 
@@ -302,6 +309,22 @@ Example:
             console.log((x = y + 1)); 
             //  4
 
+`Left Shift Assignment` (<<=):
+
+Shifts the operands left by n bits and assign the value to left operand.
+
+        let x = 5; // 0000 0101
+        x <<= 1;  // 0000 1010, x is now 10
+
+
+`Right Shift Assignment` (>>=):
+
+Shifts the operands right by n bits and assign the value to left operand.
+
+        let x = 10; // 0000 1010
+        x >>= 1;   // 0000 0101, x is now 5
+
+---
 
 ## 9.`Comma operator`:
 
@@ -313,6 +336,7 @@ Example:
             
         const a = 1, b = 2;
 
+---
 
 ## 10. `Spread Operator`:
 
