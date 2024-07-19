@@ -124,7 +124,40 @@ Returns the opposite of the condition.
         alert("Name is not empty");
     }
 
-4. Multiplicative operators:
+4. Arithmetic operators:
+
+`Addition`:
+
+Produces the sum of two operators.
+
+        Number + Number -> addition
+                1 + 2            // 3
+
+        Boolean + Number -> addition
+                true + 1        // 2
+
+        Boolean + Boolean -> addition
+                false + false   // 0
+
+        Number + String -> concatenation
+                5 + "demo"     // "5demo"
+
+        String + Boolean -> concatenation
+                "k" + false    // "kfalse"
+
+        String + String -> concatenation
+                "kan" + "ish"  // "kanish"
+
+`Subtraction`:
+
+The subtraction operator subtracts the two operands, producing their difference.
+
+        5 - 3                 //  2
+        3 - 5                 // -2
+        "foo" - 3             // NaN
+
+
+`Multiplication`:
 
 The multiplication (*) operator produces the product of the operands.
 
@@ -136,4 +169,12 @@ The multiplication (*) operator produces the product of the operands.
 
         console.log('foo' * 2);   //Nan
 
+`Division`:
 
+Divides two operands.
+
+        1 / 2                  // returns 0.5
+        1.0 / 2.0              // returns 0.5
+        2.0 / 0                // returns Infinity
+        2.0 / -0.0             // returns -Infinity
+  
