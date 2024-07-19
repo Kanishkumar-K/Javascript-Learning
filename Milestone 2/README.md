@@ -288,12 +288,34 @@ Number() converts value to a Number.
         let num5 = -2 /0
         console.log(num5)             // -infinity
 
+    Scientific  Notation:
+
         let num6 = 5e4
         console.log(num6)             // 50000
 
         ```
 
 --- 
+<br >
+Number Precision
+
+     Integer Precision:
+
+        - Integers are precise upto 15 digits.
+
+    Floating Precision:
+        - They are not 100% accurate always.
+
+
+    - To get accurate value, multiply and divide. 
+
+
+**Numerical Strings**:
+- JavaScript automatically converts the numeric strings to numbers in most operations like.
+
+        let x  = "100" / "10";           // 10
+
+
 
 ## JavaScript Strings
 
