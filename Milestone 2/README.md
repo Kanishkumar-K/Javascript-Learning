@@ -581,7 +581,7 @@ Properties:
 
         person["fullName"]() ; // Kanish Kumar
 
-3. Delete an object property
+4. Delete an object property
 
         delete person.age  // returns true
 
