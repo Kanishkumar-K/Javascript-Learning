@@ -295,6 +295,9 @@ In javascript, boolean can have either two values
 4. Boolean of NaN is false.
 5. Comparing two JavaScript objects always return false.
 
+        Boolean b=new Boolean(value);  
+
+
 ---
 
 ## Number
@@ -521,3 +524,40 @@ Array Methods:
         document.getElementById("demo10").innerHTML = lang.reverse(); // descending
 
 
+sort()  // modify the existing array itself
+toSorted()  // craetes new array and sort it
+
+---
+
+## Object Types:
+
+- Object literal is a list of property names:values inside curly braces {}.
+
+1. Empty object:
+
+        const person = {};
+
+        person.firstName = "Kanish";
+        person.lastName = "Kumar";
+ 
+ 2. Using new object()
+
+        const person = new Object();
+        person.firstName = "Kanish";
+        person.lastName = "Kumar";
+
+3. Object Constructor:
+
+        const person (first, last){
+            this.firstName = first;
+            this.lastName = last;
+        }
+
+        const s1 = new person("Kanish", "Kumar");        
+        const s2 = new person("Ajay", "Saran");
+
+Properties:
+
+1. Add a new property:
+
+        Object.defineProperty(person, "age", {value:"21"})
