@@ -593,17 +593,18 @@ Properties:
 
 - JSON can be easily converted to JS objects
 
-        converting JSON strings into JavaScript objects:  JSON.parse()
+        converting JSON strings into JavaScript objects :  JSON.parse()
 
-        converting an object into a JSON string:  JSON.stringify() 
+        converting an object into a JSON string         :  JSON.stringify() 
 
 JSON object
 
-        myObj = {"name":"Kanish", "age":21 }
+         myObj = {"name":"Kanish", "age":21 }
+ 
+         myObj = `{"name":"Kanish", "age":21 }`  // json string
+ 
+         myObj = JSON.parse(myJSON);  // to convert as js object
 
-        myObj = `{"name":"Kanish", "age":21 }`  // json string
-
-        myObj = JSON.parse(myJSON);  // to convert as js object
 
 
 
