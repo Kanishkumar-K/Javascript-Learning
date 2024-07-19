@@ -201,6 +201,43 @@ const:
  ```               
 ---
 
+**Hoisting a variable**:
+
+- Hoisting is a behavior in which a variable can be used before declaration.
+
+
+
+    Using var:
+
+        <p id="demo"></p>
+        <script>
+
+        Name = "Kanish";                 // using a variable before declaring
+        var Name = "Kanishkumar";   
+
+        document.getElementById('demo').innerHTML = Name;  // Kanishkumar
+        </script>
+    
+    Using let:
+
+    This will result in Reference Error.
+
+        <script>
+        try{
+        Name = "Kanish";                 
+        let Name = "Kanishkumar";   
+        }
+        catch(err)
+        {
+            document.getElementById('demo').innerHTML = err;  
+            
+            // ReferenceError: Cannot access 'Name' before initialization
+        }
+        </script>
+
+    Using const:
+            This wont produce any output when a variable is hoisted.
+
 ## Typeof operator
 
 - The typeof operator returns the type of a variable or an expression.
@@ -293,7 +330,7 @@ Number() converts value to a Number.
         let num6 = 5e4
         console.log(num6)             // 50000
 
-        ```
+    
 
 --- 
 <br >
@@ -314,7 +351,6 @@ Number Precision
 - JavaScript automatically converts the numeric strings to numbers in most operations like.
 
         let x  = "100" / "10";           // 10
-
 
 
 ## JavaScript Strings
@@ -338,18 +374,60 @@ Created using 2 ways
 1. String literal
 2. Object (new keyword)
 
-
 ```
 let name = 'kanish';  // String literal
 
-var stringname=new String("kanish");   // String Object
+var stringname = new String("kanish");   // String Object
 
 ```
 
 ---
 
-## Strings Methods
+## String Interpolation
+
+Method to inject a variable or expression intto a string.
+
+    const text = "Morning";
+    const greeting = `Good, ${text}!`;
+    console.log(greeting);
 
 
 
+## String Methods
+
+    var text = "Kanishkumar";
+
+    document.getElementById("demo").innerHTML = text.length;   // 11
+
+    document.getElementById("demo1").innerHTML = text.charAt(0);    // K
+
+    document.getElementById("demo2").innerHTML = text.charCodeAt(1);  // 97
+
+    document.getElementById("demo3").innerHTML = text[0];   // K
+
+    document.getElementById("demo4").innerHTML = text.at(1);  // a
+
+    document.getElementById("demo5").innerHTML = text.slice(0,6);   // Kanish
+
+    document.getElementById("demo6").innerHTML = text.slice(-4, -1);  // uma
+
+    document.getElementById("demo7").innerHTML = text.substr(5,3); // (start, start+3)
+
+    document.getElementById("demo8").innerHTML = text.toUpperCase();  // toLowerCase()
+
+    document.getElementById("demo9").innerHTML = text.concat(" ", "K");
+
+    document.getElementById("demo10").innerHTML = text.trim(); // trimStart(), trimEnd()
+
+    document.getElementById("demo11").innerHTML = text.padStart(15, "-"); // pads upto given length  ----Kanishkumar
+
+    document.getElementById("demo12").innerHTML = text.repeat(2); 
+
+    document.getElementById("demo13").innerHTML = text.replace("a", "-"); // replaceAll for all replacements
+
+    document.getElementById("demo14").innerHTML = text.split(""); // array of chars
+
+    document.getElementById("demo15").innerHTML = text.indexOf("a"); // indexOf(), lastIndexOf()
+    
+    document.getElementById("demo16").innerHTML = text.search("n");  
 
