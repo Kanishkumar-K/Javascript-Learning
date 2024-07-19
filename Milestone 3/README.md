@@ -313,7 +313,7 @@ Example:
         const a = 1, b = 2;
 
 
-`Spread Operator`:
+## 10. `Spread Operator`:
 
 Spread (...) : Allows an iterable to expand in places where 0+ arguments are expected
 
