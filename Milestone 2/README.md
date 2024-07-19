@@ -468,4 +468,56 @@ Method to inject a variable or expression intto a string.
 
 ## Arrays
 
+An array is a special variable, which can hold more than one value:
+
+        const array = [item1, item2, ... itemn];   
+
+- Declared using
+
+1. Direct creation
+
+        const language = ["html", "css"];
+
+2. Empty Arry
+
+        const language = [];
+        language[0] = "html";
+        language[1] = "css";
+
+3. Using new Array()
+        
+        const language = new Array("html", "css");
+
+- Access array elements using index
+- Access full array using array name
+- Use toString() to convert array to string
+- typeOf returns arrays as objects
+
+
+Array Methods:
+
+        const lang = ["html","css", "js"];
+
+        document.getElementById("demo").innerHTML = Array.isArray(lang);  // true
+
+        document.getElementById("demo1").innerHTML = lang.length;  // 3
+
+        document.getElementById("demo2").innerHTML = lang.toString(); // html,css,js
+
+        document.getElementById("demo3").innerHTML = lang.at(2); // js
+
+        document.getElementById("demo4").innerHTML = lang.join(" - "); // connector
+
+        document.getElementById("demo5").innerHTML = lang.push("mongodb");
+
+        document.getElementById("demo6").innerHTML = lang.pop(); // removes last element
+
+        document.getElementById("demo7").innerHTML = lang.shift(); // removes first element and shifts all other elements to left
+
+        document.getElementById("demo8").innerHTML = lang.unshift("react"); // adds new element at beginning and shift other elements to right
+
+        document.getElementById("demo9").innerHTML = lang.sort(); // ascending
+
+        document.getElementById("demo10").innerHTML = lang.reverse(); // descending
+
 
