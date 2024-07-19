@@ -195,6 +195,7 @@ Divides two operands.
         2.0 / 0                // returns Infinity
         2.0 / -0.0             // returns -Infinity
   
+
 ## 5. Relational Operators:
 
 A relational operator compares its operands and returns a Boolean value based on comparison.
