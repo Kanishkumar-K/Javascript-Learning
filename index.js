@@ -1,14 +1,15 @@
-function print(){
-    return "Hi";
+let name = {
+    first: 'Kanish',
+    last: 'Kumar'
 }
 
-function print(name){
-    return "Hi"+ name;
+var printName = function(city, state, country) {
+    console.log(this.first + " " + this.last + " " + city + " " + state + " " + country);
 }
 
-function print(name, age){
-    return "Hi "+name +  " "+ age;
-}
+let newFunc = printName.bind(name, 'Chennai', 'TamilNadu', 'India'); 
 
+console.log(newFunc); // [Function: bound printName]
 
-console.log(print());
+newFunc(); 
+// Output: Kanish Kumar Chennai TamilNadu India
