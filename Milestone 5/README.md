@@ -52,4 +52,3 @@ When JavaScript reaches a return statement, the function will stop executing.
         let value = MulBy100(10);  // function call
 
 ---
-
