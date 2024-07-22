@@ -239,7 +239,7 @@ Example (using strings):
 ---
 
 
-`Jump Statements`:
+# Jump Statements:
 
 - The break statement breaks the loop.
 
@@ -288,6 +288,7 @@ Example:
 
 
 ---
+# Other Statements:
 
 `Switch case statement`
 
