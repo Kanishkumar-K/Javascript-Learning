@@ -606,6 +606,4 @@ JSON object
          myObj = JSON.parse(myJSON);  // to convert as js object
 
 
-
-
     

@@ -35,7 +35,6 @@ It can be invoked when
 
 `Return Statement`:
 
-
 When JavaScript reaches a return statement, the function will stop executing.
 
 
