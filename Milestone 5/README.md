@@ -486,3 +486,5 @@ If i want to add parameters, state and country also, then,
 
         newFunc(); 
         // Output: Kanish Kumar Chennai TamilNadu India
+
+---
