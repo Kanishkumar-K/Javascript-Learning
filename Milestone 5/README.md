@@ -303,7 +303,7 @@ With Parameters:
 
 ---
 
-`Method overloading`:
+`Function Overloading`:
 
 Unlike other programming languages, JavaScript Does not support Function Overloading.
 
