@@ -482,9 +482,9 @@ If i want to add parameters, state and country also, then,
 
         let newFunc = printName.bind(name, 'Chennai', 'TamilNadu', 'India'); 
 
-        console.log(newFunc); // [Function: bound printName]
 
         newFunc(); 
         // Output: Kanish Kumar Chennai TamilNadu India
 
 ---
+
