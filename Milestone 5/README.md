@@ -383,8 +383,6 @@ We can also use arguments object and based on its length, we can exhibit differe
 
 The call() method in JavaScript allows you to invoke a function with a specific this value and arguments.
 
-
-
         let name ={
         first: 'Kanish',
         last: 'Kumar'
