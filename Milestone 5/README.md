@@ -488,3 +488,153 @@ If i want to add parameters, state and country also, then,
 
 ---
 
+
+`Curring Function`:
+
+- Currying in JavaScript is a process in which you can transform a function with multiple arguments into a sequence of nesting functions.
+
+- Currying is a transformation of functions that translates a function from callable as f(a, b, c) into callable as f(a)(b)(c).
+
+Example:
+
+
+        function Demo(a){
+            return function(b){
+                return function(c){
+                    if (a === b){
+                        if (b === c){
+                        return "Three values are equal";
+                        }
+                    }
+                    else{
+                        return "Three values are not equal";
+                    }
+                }
+            }
+        }
+
+        console.log(Demo(2)(3)(2));  // Three values are not equal
+        console.log(Demo(2)(2)(2));  // Three values are equal
+
+---
+
+`Why Curring function ?`:
+
+- It makes the function pure and less prone to errors and side effects.
+
+- It is used in functional programming to create a higher-order function.
+
+---
+
+
+`JS Linting`:
+
+- Linting is a process of analyzing code to identify and fix potential errors, enforce coding standards, and ensure consistency.
+
+`Linter`:
+
+- A linter is a tool that scans code for  errors and deviations from coding standards.
+
+`Different Linters`
+
+#### ESLint: 
+
+- Most widely used. 
+- It is highly configurable and supports plugins for various frameworks and libraries.
+
+- In ESLint we can configure our own rules as follows,
+
+        {
+            "rules": {
+                "semi": ["error", "always"],
+                "quotes": ["error", "double"]
+            }
+        }
+
+        This rule enforces the usage of semicolon and ensures it always has double quotes  for strings.
+
+
+        export default [
+            {
+                rules: {
+                    semi: ["error", "never"]
+                }
+            },
+            {
+                rules: {
+                    semi: ["warn", "always"]
+                }
+            }
+        ];
+
+- Defining a single role many time will overwrite the latest rule and get updated.
+
+
+#### JSHint: 
+
+It provides similar functionality but with different configuration options.
+
+#### JSLint: 
+
+It has fewer configuration options compared to ESLint and JSHint.
+
+
+---
+
+`Ignoring certain rules in ESLint`:
+
+        /* eslint-disable */       (block of rules)
+
+        // eslint-disable-next-line  (specific rule)
+
+We can comment the specific rule from the ESLint configuration. 
+
+
+---
+
+`ESLint Setup`:
+
+
+Install eslint:
+
+        npm install eslint --save-dev
+
+Initialize eslint:
+
+        npx eslint --init
+
+
+Define set of rules inside a file called `eslint.js`
+
+        module.exports = {
+        env: {
+            browser: true,
+        },
+        extends: [
+            'eslint:recommended',
+        ],
+
+        parserOptions: {
+        },
+
+        plugins: [
+        ],
+
+        rules: {
+            'quotes': ['error', 'single'],
+            'semi': ['error', 'always'],
+        },
+        };
+
+Include eslint in package.json:
+
+        "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix"
+        }
+
+Run the file:
+        
+        npm run lint
+
+---
