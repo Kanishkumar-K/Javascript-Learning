@@ -1,8 +1,6 @@
-let name = "Kanish"
-name[0] = "A"
-console.log(name[0])
+let person = {};
+person.name = "Kanish";
+person.age = 22;
+person['city'] = 'Chennai';
 
-
-let s = Symbol()
-console.log(typeof s)
-
+console.log(person);
