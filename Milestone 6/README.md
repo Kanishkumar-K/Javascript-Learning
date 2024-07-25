@@ -2,10 +2,8 @@
 
 <br >
 
-- They are the basic data types. They are immutable.
-- They stored directly in the varaible.
-- Accessed directly
-
+- They ardirectly
+e the bas
 <br >
 <br >
 
