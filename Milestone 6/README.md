@@ -9,13 +9,7 @@ e the bas
 
 1. Number: 
 
-Represents both integer and floating-point numbers.
-
-        let age = 25;
-        let pi = 3.14;
-
-
-2. String: 
+Repre
 
 Represents sequences of characters.
 
