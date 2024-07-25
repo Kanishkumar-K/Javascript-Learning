@@ -13,6 +13,7 @@ If statement is used to execute a condition.
         console.log("You are eligible to vote");
     }
 
+
 ```
 
 `If else statement`:
