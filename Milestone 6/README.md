@@ -2,14 +2,22 @@
 
 <br >
 
-- They ardirectly
-e the bas
+- They are the basic data types. They are immutable.
+- They stored directly in the varaible.
+- Accessed directly
+
 <br >
 <br >
 
 1. Number: 
 
-Repre
+Represents both integer and floating-point numbers.
+
+        let age = 25;
+        let pi = 3.14;
+
+
+2. String: 
 
 Represents sequences of characters.
 
