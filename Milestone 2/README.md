@@ -6,7 +6,7 @@
 
 - Example: variables firstname and Firstname are treated differently.
 
-**Camelcase**
+**Camelcase** 
 
 - CamelCase is a naming convention in JavaScript where the first letter of a variable, function, or method name is lowercase, and the first letter of each subsequent concatenated word is capitalized. 
 
