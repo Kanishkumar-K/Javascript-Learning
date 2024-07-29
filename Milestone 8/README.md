@@ -902,10 +902,8 @@ Example:
 
 ### Promise to async /await
 
-
-> ### Why async is needed?
-
 >[!IMPORTANT]
+> ### Why async is needed?
 >- Async use to handle asynchronous operations in JS.
 >- JavaScript operates on a single thread, meaning it can only handle one task at a time.- Asynchronous programming enables JavaScript to handle multiple tasks concurrently without pausing or blocking the main thread. 
 >- The event loop is responsible for managing and executing these asynchronous tasks efficiently.
