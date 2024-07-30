@@ -1,4 +1,4 @@
-*JavaScript learning - Milestones*
+# JavaScript learning - Milestones
 
 <br>
 
