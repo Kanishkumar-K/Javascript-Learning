@@ -1,4 +1,6 @@
-**JavaScript learning - Milestones**
+*JavaScript learning - Milestones*
+
+<br>
 
 | Milestone     | Contents                                                                                       |
 |---------------|------------------------------------------------------------------------------------------------|
